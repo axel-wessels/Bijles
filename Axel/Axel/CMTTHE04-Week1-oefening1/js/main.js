@@ -32,6 +32,8 @@ function createFish(){
     aantal_vissen++
     console.log(aantal_vissen)
 
+    fish.addEventListener("click", killFish)
+
     //als het aantal vissen kleiner is dan honderd maak nieuwe vis
     if(aantal_vissen < 100) {
         createElements()
@@ -39,8 +41,8 @@ function createFish(){
 }
 
 function killFish(e){
-        console.log("I killed a fish")
-        console.log("Is this a change?")
+    let fish = e.currentTarget
+    fish.classList.add("dead")    
 }
 
 //
