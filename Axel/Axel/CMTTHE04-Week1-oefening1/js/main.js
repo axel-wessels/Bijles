@@ -41,14 +41,18 @@ function createFish(){
 }
 
 function killFish(e){
+    //here you kill the fish
     let fish = e.currentTarget
-    fish.classList.add("dead")    
+    fish.classList.add("dead")   
+    createFish() 
 }
 
 //
 // geef de bubble een random positie
 //
 function createBubble(){
+    let bubble = document.createElement("bubble")
+    document.body.appendChild(bubble)
     
 }
 
