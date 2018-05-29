@@ -40,6 +40,7 @@ function createFish(){
 
 function killFish(e){
         console.log("I killed a fish")
+        console.log("Is this a change?")
 }
 
 //
