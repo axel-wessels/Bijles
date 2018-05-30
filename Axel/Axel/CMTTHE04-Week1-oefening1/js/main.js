@@ -53,6 +53,12 @@ function killFish(e){
 function createBubble(){
     let bubble = document.createElement("bubble")
     document.body.appendChild(bubble)
+
+    let xpos = (Math.random() * window.innerWidth)
+
+    bubble.style.left = xpos + "px"
+
+    bubble.style.display = "none"
     
 }
 
