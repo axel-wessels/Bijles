@@ -57,10 +57,14 @@ function createBubble(){
     let xpos = (Math.random() * window.innerWidth)
 
     bubble.style.left = xpos + "px"
-
-    bubble.style.display = "none"
     
+    bubble.addEventListener("click", killbubble)
 }
+
+function killbubble (e){
+    let bubble = e.currentTarget
+    bubble.style.display = "none"
+    }
 
 //
 // roep een functie aan als alles geladen is
